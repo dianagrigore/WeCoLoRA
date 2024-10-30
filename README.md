@@ -1,9 +1,10 @@
-# Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers
+# 🎨 Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers
+_Diana-Nicoleta Grigore, Mariana-Iuliana Georgescu, Jon Alvarez Justo, Tor Johansen, Andreea Iuliana Ionescu, Radu Tudor Ionescu_
 ### [Paper](https://arxiv.org/abs/2404.09326) | [Webpage]()
 This repository contains the official implementation of our paper **"Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers"**, presented at WACV 2025.
 ![](figures/fig_main.png)
 
-# About 
+# About 📖 
 
 Few-shot knowledge distillation has emerged as a promising way to leverage the knowledge of large-scale pre-trained models with minimal data and resources. In this work, we propose a novel **few-shot feature distillation** approach tailored for Vision Transformers. Our method comprises two core components:
 
@@ -14,7 +15,7 @@ Few-shot knowledge distillation has emerged as a promising way to leverage the k
 
 Through extensive experiments on five diverse datasets—including **natural, medical, and satellite images**—using both supervised and self-supervised Vision Transformers as teachers, our approach outperforms competitive baselines. 
 
-## Setup
+## Setup 🛠️
 
 Clone repo, create a conda environment and install the dependencies:
 ```
@@ -25,7 +26,7 @@ conda activate WeCoLoRA
 pip install -r requirements.txt
 ```
 
-## Weight Copy and Knowledge Distillation
+## Weight Copy and Knowledge Distillation 🛠️
 To obtain the distilled student using our few-shot method:
 ```
 python main_standard_kd.py \
@@ -42,8 +43,8 @@ python main_standard_kd.py \
 - ```few_shot``` and ```few_shot_ratio``` for using a percentage of the data 
 - ```lora_distillation``` and ```lora_matrix_rank``` for using LoRA
 
-## Linear Probing
-
+## Linear Probing 🔍
+ 
 ```
 python main_linprobe.py  --batch_size 512 --epochs 50 \
  --dataset=cifar-100 --blr 0.1 \
@@ -57,7 +58,7 @@ python main_linprobe.py  --batch_size 512 --epochs 50 \
 - ```reduction_factor``` for loading a student model
 - ```lora_model``` and ```lora_matrix_rank``` for using LoRA models in linear probing
 
-## Results
+## Results 📉 
 __Ablation results in terms of accuracy (in percentages) on ImageNet-1K, iNaturalist19, and CIFAR-100. Results are obtained using a compression factor of r=2 with a self-supervised teacher ViT-B.__
 
 | $\alpha$     | Weight Copy | LoRA | Enhanced LoRA | ImageNet | iNaturalist | CIFAR-100 |
@@ -88,7 +89,7 @@ __Results of WeCoLoRA and WeCo+KD in terms of accuracy (in percentages) on Image
 
 
 
-## How to Cite
+## How to Cite 📄
 ```bibtex
 @article{grigore2024weight,
   title={Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers},
