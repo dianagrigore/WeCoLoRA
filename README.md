@@ -1,5 +1,5 @@
 # 🎨 Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers (WACV 2025) - Official Repo
-_Diana-Nicoleta Grigore, Mariana-Iuliana Georgescu, Jon Alvarez Justo, Tor Johansen, Andreea Iuliana Ionescu, Radu Tudor Ionescu_
+_Diana-Nicoleta Grigore*, Mariana-Iuliana Georgescu*, Jon Alvarez Justo, Tor Johansen, Andreea Iuliana Ionescu, Radu Tudor Ionescu_
 ### [Preprint available here](https://arxiv.org/abs/2404.09326)
 This repository contains the official implementation of our paper **"Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers"**, presented at WACV 2025.
 ![](figures/fig_main.png)
