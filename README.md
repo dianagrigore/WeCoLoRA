@@ -1,19 +1,19 @@
-# 🎨 Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers
+# 🎨 Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers (WACV 2025) - Official Repo
 _Diana-Nicoleta Grigore, Mariana-Iuliana Georgescu, Jon Alvarez Justo, Tor Johansen, Andreea Iuliana Ionescu, Radu Tudor Ionescu_
-### [Paper](https://arxiv.org/abs/2404.09326) | [Webpage]()
+### [Preprint available here](https://arxiv.org/abs/2404.09326)
 This repository contains the official implementation of our paper **"Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers"**, presented at WACV 2025.
 ![](figures/fig_main.png)
 
 # About 📖 
 
-Few-shot knowledge distillation has emerged as a promising way to leverage the knowledge of large-scale pre-trained models with minimal data and resources. In this work, we propose a novel **few-shot feature distillation** approach tailored for Vision Transformers. Our method comprises two core components:
+Few-shot knowledge distillation has emerged as a promising way to leverage the knowledge of large-scale pre-trained models with minimal data and resources. In this work, we propose a novel **unsupervised few-shot feature distillation** approach tailored for Vision Transformers. Our method comprises two core components:
 
 1. **Weight Copying**: Using the depth-consistent structure of Vision Transformers, we copy weights from intermittent layers of pre-trained teachers to create shallower student architectures. This intermittence factor allows control over the complexity of the student transformer relative to its counterpart.
 
  
 2. **Enhanced Low-Rank Adaptation (LoRA)**: We introduce an improved LoRA technique for distilling knowledge in few-shot settings, effectively compensating for information processing from the omitted teacher layers.
 
-Through extensive experiments on five diverse datasets—including **natural, medical, and satellite images**—using both supervised and self-supervised Vision Transformers as teachers, our approach outperforms competitive baselines. 
+Through extensive experiments on six diverse datasets—including **natural, medical, and satellite images**—using both supervised and self-supervised Vision Transformers as teachers, our approach outperforms competitive baselines. 
 
 ## Setup 🛠️
 
@@ -91,10 +91,10 @@ __Results of WeCoLoRA and WeCo+KD in terms of accuracy (in percentages) on Image
 
 ## How to Cite 📄
 ```bibtex
-@article{grigore2024weight,
+@inproceedings{grigore2024weight,
   title={Weight Copy and Low-Rank Adaptation for Few-Shot Distillation of Vision Transformers},
   author={Grigore, Diana-Nicoleta and Georgescu, Mariana-Iuliana and Justo, Jon Alvarez and Johansen, Tor and Ionescu, Andreea Iuliana and Ionescu, Radu Tudor},
-  journal={arXiv preprint arXiv:2404.09326},
-  year={2024}
+  booktitle={Proceedings of WACV},
+  year={2025}
 }
 ```
