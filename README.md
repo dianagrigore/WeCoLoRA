@@ -87,7 +87,8 @@ __Results of WeCoLoRA and WeCo+KD in terms of accuracy (in percentages) on Image
 |                                    | 3                          | WeCo+KD            | 32.4     | **66.7**     | **21.1**    | 42.2     | 34.0      |
 |                                    |                            | WeCoLoRA           | **32.9** | 66.6         | **21.1**    | **55.6** | **34.4**  |
 
-
+## 📜 Acknowledgments             
+This work builds upon the concepts and framework established in the [MAE (Masked Autoencoder) repository](https://github.com/facebookresearch/mae). 
 
 ## How to Cite 📄
 ```bibtex
