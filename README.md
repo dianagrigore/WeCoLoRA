@@ -90,6 +90,10 @@ __Results of WeCoLoRA and WeCo+KD in terms of accuracy (in percentages) on Image
 ## 📜 Acknowledgments             
 This work builds upon the concepts and framework established in the [MAE (Masked Autoencoder) repository](https://github.com/facebookresearch/mae). 
 
+## 📜 License
+
+This project is under the CC-BY-NC 4.0 license. See [LICENSE](https://creativecommons.org/licenses/by-nc/4.0/deed.en) for details.
+
 ## How to Cite 📄
 ```bibtex
 @inproceedings{grigore2024weight,
